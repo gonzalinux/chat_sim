@@ -23,13 +23,15 @@ html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #faebd7;
+    background-color: #ca7100;
 
 }
 
 
 
 #Inicioapp{
+    position: absolute;
+    opacity: 1;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -37,7 +39,7 @@ html, body{
     display: flex;
     background: blue url("../img/regalo.jpg") no-repeat center;
     background-size: cover;
-    transition: opacity 1s;
+
 }
 #btnempezar{
 
@@ -52,9 +54,10 @@ html, body{
     z-index: 1;
     text-align: center;
     display: block;
-
     border-radius: 10%;
     border: 100px #1B1B1B;
+    -webkit-transition: all 0.6s ease-in-out,opacity 0s;
+
     transition: all 0.6s ease-in-out;
 
 
@@ -67,7 +70,7 @@ background: red;
     margin: 0;
 }
 #imagenhablante img{
-    position: fixed;
+    position: absolute;
     width: 80vw;
     bottom:35vh;
 
@@ -75,50 +78,52 @@ background: red;
 
 
 #contenedorchat {
+    background-image:linear-gradient(to bottom, #585858 0%, #1B1B1B 51%);
     width: 100vw;
     height: 100vh;
     left:0;
     top: 0;
-    display: none;
+    display: flex;
 
 
 }
 
 #chat{
-    background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-    position: fixed;
+    background: linear-gradient(135deg, rgba(226,226,226,1) 0%, rgba(219,219,219,1) 50%, rgba(209,209,209,1) 51%, rgba(254,254,254,1) 100%);    position: fixed;
     top:65vh;
     width: 90vw;
     height: 30vh;
     margin-left: 5vw;
     margin-bottom: 5vh;
+    -webkit-transition:opacity 0.3s ease-out ;
     transition: opacity 0.3s ease-out;
     opacity: 1;
 
 }
-#contenedorchat:active{
-    opacity: 0.6;
+#chat:active{
+    opacity: 0.7;
 }
 #hablante{
+
     background: linear-gradient(to right, rgba(147,206,222,1) 0%, rgba(117,189,209,1) 41%, rgba(73,165,191,1) 100%);
-    color: gold;
+    color: #a50000;
     font-size:250%;
-    height: 30px;
+    height: 10%;
     padding: 4%;
+    font-family: auto, serif;
 
 
 }
 
 #textochat{
-    color: dimgray;
+    color: #4a0000;
     font-size: 180%;
     padding: 6%;
+    font-family: system-ui, serif;
+    
 
 
 }
-
-
-
 
 
 * {
@@ -141,7 +146,7 @@ body {
     /* Padding to avoid the "unsafe" areas behind notches in the screen */
     /*noinspection CssInvalidFunction*/
     padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
-    text-transform:uppercase;
+
     width:100%;
 }
 

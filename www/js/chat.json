@@ -8,10 +8,18 @@
   },
   {
     "hablante":"Peko Pekoyama",
-    "texto": "Hola.",
-    "sprite": "stand.png"
+    "texto": "QUIEN ERES TU?",
+    "sprite": "quetemeto.png"
 
+  },
+  {
+    "hablante":"Yuta",
+    "texto": "Calma, calma, soy yo. El jugador que controlaba a hinata.",
+    "sprite": "quetemeto.png"
+  },
+  {
+    "hablante":"Peko Pekoyama",
+    "texto": "Oh? como funciona eso?",
+    "sprite": "pensativa.png"
   }
-
-
 ]
