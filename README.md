@@ -1,5 +1,5 @@
 # chat_sim
-Primera app de android usando cordova. Se trata de un simulador de chat facilmente editable mediante el archivo json y las fotos de la carpeta www/img/sprites/.
+Primera app de android usando cordova. Se trata de un simulador de chat facilmente editable mediante el archivo /www/js/chat.json y las fotos de la carpeta www/img/sprites/.
 
 He usado webstorm con el pryecto predefinido de cordova. Nuevo pryecto -> cordova. Los plugins usados son File y Media. Media ahora mismo no se usa pero pensaba poner archivos de audio para su reproduccion junto a los mensajes del chat.
 
